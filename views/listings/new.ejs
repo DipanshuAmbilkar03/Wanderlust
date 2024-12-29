@@ -29,15 +29,6 @@
                                 type="text"
                                     required></textarea>
             </div>
-    <!-- <br> -->
-            <!-- <div class="mb-3">
-                <label for="image" class="form-label">Image Link</label>
-                <input 
-                    name="listing[image.URL]" 
-                        placeholder="enter image URL/Link" 
-                            class="form-control" 
-                                type="text">
-            </div> -->
             
             <!-- file upload  -->
             <div class="mb-3">
@@ -99,20 +90,18 @@
 <script>
     (() => {
     'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+
     const forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
+
     Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
+    form.addEventListener('submit', event => {
         if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+        event.preventDefault()
+        event.stopPropagation()
         }
-  
+
         form.classList.add('was-validated')
-      }, false)
+    }, false)
     })
-  })()
+})()
 </script>
