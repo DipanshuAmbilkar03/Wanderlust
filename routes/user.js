@@ -24,5 +24,9 @@ router.get("/logout"
     ,userController.logOut
 );
 
+router.get("/",(req,res) => {
+    res.redirect("./listings");
+})
+
 
 module.exports = router;
